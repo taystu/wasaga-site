@@ -1,0 +1,84 @@
+/*
+Theme Name: Worthy - Free Powerful Theme by HtmlCoder
+Author:HtmlCoder
+Author URI:http://www.htmlcoder.me
+Version:1.0.0
+Created:November 2014
+License: Creative Commons Attribution 3.0 License (https://creativecommons.org/licenses/by/3.0/)
+File Description: Place here your custom CSS styles
+*/
+
+.descript {
+	color: #444;
+}
+
+/* external css: flickity.css */
+
+.carousel-caption {
+	color: white;
+}
+
+.fancybox img {
+	margin-bottom: 5px;
+}
+
+.banner-image img {
+	height: 75%;
+}
+
+#map {
+	border-radius: 50%;
+	height: 100%;
+	width: 100%;
+	border: 2px solid white;
+}
+
+a .lead {
+	font-size: 1em;
+}
+
+.emphasis {
+	font-weight: bold;
+}
+
+
+
+@media (min-width:600px) and (max-width:768px) {
+	#map {
+		height: 75%;
+		width: 75%;
+		margin: 0 auto;
+	}
+}
+
+
+
+
+.green {
+	color: #30ff00;
+}
+
+
+
+@media (max-width:768px) {
+	#navbar-collapse-1 {
+		position: fixed;
+		background: black;
+	}
+
+
+	.navbar-collapse {
+		position: fixed;
+	}
+}
+
+.image-box {
+	margin-bottom: 20px;
+}
+
+
+
+
+.profile-pic {
+	height:200px;5
+}
