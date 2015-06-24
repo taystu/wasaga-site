@@ -10,13 +10,13 @@
 (function($){
 	$(document).ready(function(){
 	
-		$(".banner-image").backstretch('images/gallery2.jpg');
+		$(".banner-image").backstretch('images/banner-image.jpg');
 		
 		// Fixed header
 		//-----------------------------------------------
 		$(window).scroll(function() {
 			if (($(".header.fixed").length > 0)) { 
-				if(($(this).scrollTop() > 0) && ($(window).width() > 767)) {
+				if(($(this).scrollTop() > 0) && ($(window).width() > 300)) {
 					$("body").addClass("fixed-header-on");
 				} else {
 					$("body").removeClass("fixed-header-on");
@@ -26,13 +26,23 @@
 
 		$(window).load(function() {
 			if (($(".header.fixed").length > 0)) { 
-				if(($(this).scrollTop() > 0) && ($(window).width() > 767)) {
+				if(($(this).scrollTop() > 0) && ($(window).width() > 300)) {
 					$("body").addClass("fixed-header-on");
 				} else {
 					$("body").removeClass("fixed-header-on");
 				}
 			};
 		});
+
+
+		//Remove Nav on Click
+
+		$('.nav .main-nav').on('click', function(){
+			$('.navbar-toggle').click()
+		});
+
+
+		//Remove map enlarge
 
 		//Scroll Spy
 		//-----------------------------------------------
@@ -67,7 +77,7 @@
 			$("[data-animation-effect]").each(function() {
 				var $this = $(this),
 				animationEffect = $this.attr("data-animation-effect");
-				if(Modernizr.mq('only all and (min-width: 768px)') && Modernizr.csstransitions) {
+				if(Modernizr.mq('only all and (min-width: 300px)') && Modernizr.csstransitions) {
 					$this.appear(function() {
 						setTimeout(function() {
 							$this.addClass('animated object-visible ' + animationEffect);

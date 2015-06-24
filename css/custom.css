@@ -12,19 +12,37 @@ File Description: Place here your custom CSS styles
 	color: #444;
 }
 
-/* external css: flickity.css */
+/* Fancybox */
 
-.carousel-caption {
-	color: white;
+
+.super-small {
+	color: #666;
+	font-size: 12px;
 }
+
+/* Remove white */
+
+.fancybox-opened .fancybox-skin {
+    -webkit-box-shadow: 0 0 0;
+       -moz-box-shadow: 0 0 0;
+            box-shadow: 0 0 0;
+}
+
+
 
 .fancybox img {
 	margin-bottom: 5px;
 }
 
-.banner-image img {
-	height: 75%;
+
+/* Slick */
+
+
+.a-left {
+	margin
 }
+
+
 
 #map {
 	border-radius: 50%;
@@ -53,32 +71,81 @@ a .lead {
 
 
 
+@media (max-width:600px) {
+	#enlarge-map {
+		display: none;
+	}
+}
+
+/* Colors */
 
 .green {
 	color: #30ff00;
 }
 
-
-
-@media (max-width:768px) {
-	#navbar-collapse-1 {
-		position: fixed;
-		background: black;
-	}
-
-
-	.navbar-collapse {
-		position: fixed;
-	}
+.fa-caret-right {
+	color:#55acee;
 }
+
+
 
 .image-box {
 	margin-bottom: 20px;
 }
 
 
-
-
 .profile-pic {
 	height:200px;5
+}
+
+.no-icon {
+	margin-left: 50px;
+}
+
+.wasaga-profile p {
+	font-size: 1.1em;
+	line-height: 1.8em;
+	text-indent: 1.5em;
+}
+
+.proposal {
+	font-size: 1.1em;
+	text-indent: 1em;
+}
+.nav li {
+	display:inline-block;
+}
+
+
+/* Development Section */
+
+.development {
+	padding-bottom: 60px;
+}
+
+
+
+/* Modal */
+
+
+
+/* Footer */
+
+.list-icons li i{
+	margin-left: 0;
+	margi
+
+}
+
+
+.footer-content {
+	padding-top: 20px;
+	text-align: center;
+	left: 0;
+}
+
+.footer-content img {
+	height: 50%;
+	width: 50%;
+	margin: 0 auto;
 }

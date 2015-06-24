@@ -61,7 +61,7 @@ h1 span,
 h2 span,
 h3 span,
 h4 span {
-	color: #24519b;
+	color: black;
 }
 .text-colored {
 	color: #55acee;
@@ -102,6 +102,7 @@ img {
 }
 .list-icons li {
 	padding: 0 0 15px 0;
+	left: 0;
 }
 blockquote {
 	border-left: none;
@@ -233,10 +234,10 @@ blockquote {
 	position: relative;
 }
 .bg-image-1 {
-	background: url("../images/bg-image-1.jpg") 50% 0px no-repeat;
+	background: url("../images/wasaga-aerial.jpg") 50% 0px no-repeat;
 }
 .bg-image-2 {
-	background: url("../images/bg-image-2.jpg") 50% 0px no-repeat;
+	background: url("../images/wasaga-townhomes.jpg") 50% 0px no-repeat;
 }
 
 /* Misc
@@ -502,9 +503,9 @@ textarea {
 		float: left !important;
 	}
 }
-@media (max-width:767px) {
+ @media (max-width:767px) {
 	.header.navbar-fixed-top {
-		position: absolute;
+		position: fixed;
 	}
 }
 
@@ -514,7 +515,7 @@ textarea {
 ----------------------------------------------------------------------------- */
 .fixed-header-on .header {
 	background-color: rgba(0, 0, 0, 0.95);
-	padding: 5px 0;
+	padding: 10px 0;
 }
 .fixed-header-on .site-name {
 	font-size: 24px;
@@ -525,7 +526,7 @@ textarea {
 	margin-top: 0;
 	margin-bottom: 0;
 }
-@media (min-width:768px) {
+ @media (min-width:768px) {
 	.fixed-header-on .navbar-default .navbar-nav > li > a {
 		padding-top: 20px;
 		padding-bottom: 20px;
@@ -570,14 +571,10 @@ textarea {
 	text-decoration: none;
 }
 .site-slogan {
-	font-size: 12px;
+	font-size: 16px;
 }
 
-/* Testimonials
----------------------------------- */
-.testimonial .media-left {
-	width: 60px;
-}
+
 
 /* Social Links
 ---------------------------------- */
