@@ -35,12 +35,6 @@ File Description: Place here your custom CSS styles
 }
 
 
-/* Slick */
-
-
-.a-left {
-	margin
-}
 
 
 
@@ -59,7 +53,7 @@ a .lead {
 	font-weight: bold;
 }
 
-
+/* Map Stlyes */
 
 @media (min-width:600px) and (max-width:768px) {
 	#map {
@@ -70,12 +64,25 @@ a .lead {
 }
 
 
-
-@media (max-width:600px) {
+@media (max-width:620px) {
 	#enlarge-map {
 		display: none;
 	}
+
+
+	.image-box .btn-block {
+		font-size:0.8em;
+		margin:0;
+		padding: 0;
+	}
+
+	.
+
+
 }
+
+
+
 
 /* Colors */
 
@@ -91,15 +98,13 @@ a .lead {
 
 .image-box {
 	margin-bottom: 20px;
+	width:100%;
 }
 
 
-.profile-pic {
-	height:200px;5
-}
 
 .no-icon {
-	margin-left: 50px;
+	margin-left: 20px;
 }
 
 .wasaga-profile p {
@@ -119,23 +124,31 @@ a .lead {
 
 /* Development Section */
 
+#proposal-model {
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
 .development {
 	padding-bottom: 60px;
 }
 
 
+/* Contact */
 
-/* Modal */
+.profile-pic {
+	height:200px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
 
 
 
 /* Footer */
 
-.list-icons li i{
-	margin-left: 0;
-	margi
-
-}
 
 
 .footer-content {

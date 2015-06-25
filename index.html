@@ -20,7 +20,7 @@
 		<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
 
 		<!-- Font Awesome CSS -->
-		<link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+		<link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
 		<!-- Plugins -->
 		<link href="css/animations.css" rel="stylesheet">
@@ -32,9 +32,7 @@
 		<link href="css/custom.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/jquery.fancybox.css">
 		<link rel="stylesheet" href="css/jquery.fancybox-buttons.css">
-		<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.css"/>
 
-		<link rel="stylesheet" href="css/photoswipe.css">
 
 
 	</head>
@@ -225,7 +223,7 @@
 						</ul>
 					</div>
 					<div class="col-xs-hidden col-sm-6">
-						<a class="fancybox" rel="gallery2" href="images/wasaga-circle3.png" title="View of property looking South towards open countryside. The New England site is at the easterly limit of the and mostly within the Town of Wasaga Beach.">
+						<a class="fancybox" rel="gallery2" href="images/wasaga-circle3.png" title="View of property looking South towards open countryside. The New England site is at the easterly limit of the and mostly within the Town of Wasaga Beach." id="map-box">
 						<img id="map" src="images/wasaga-circle3.png" alt="">
 						<p class="lead text-center" id="enlarge-map">click to enlarge</p>
 						</a>
@@ -329,8 +327,9 @@
 												<h3>Blue Mountain</h3>
 												<div class="row">
 													<div class="col-md-6">
-														<p>Collingwood/Blue Mountains (30Km to the West of Wasaga Beach, attracts approximately 1.4 million visitors split between winter & summer.</p>
-													
+														<p>Collingwood/Blue Mountains Area (30Km to the West of Wasaga Beach, attracts approximately 1.4 million visitors split between winter & summer.</p>
+														<p>Within a 35 minute drive of Wasaga Beach Blue Mountain is Ontario's largest mountain resort. With 36
+														runs, 3 half-pipes, a snow-tubing park and 15 ski lifts it attracts a significant amount of visitors each year. </p>
 													</div>
 													<div class="col-md-6">
 														<img src="images/blue-mountain.jpg" alt="">
@@ -355,7 +354,7 @@
 											<span>Summer</span>
 										</a>
 									</div>
-									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-3">Festivals and Events</a>
+									<a class="btn btn-default btn-block" data-toggle="modal" data-target="#project-3">Events</a>
 								</div>
 								<!-- Modal -->
 								<div class="modal fade" id="project-3" tabindex="-1" role="dialog" aria-labelledby="project-3-label" aria-hidden="true">
@@ -369,7 +368,14 @@
 												<h3>Festivals and Events</h3>
 												<div class="row">
 													<div class="col-md-6">
-														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sed, quidem quis praesentium, ut unde. Quae sed, incidunt laudantium nesciunt, optio corporis quod earum pariatur omnis illo saepe numquam suscipit, nemo placeat dignissimos eius mollitia et quas officia doloremque ipsum labore rem deserunt vero! Magnam totam delectus accusantium voluptas et, tempora quos atque, fugiat, obcaecati voluptatibus commodi illo voluptates dolore nemo quo soluta quis.</p>
+													<p>From concerts to sports tournaments Wasaga beach is home to many large scale events. </p>
+													<ul class="list-unstyled">
+														<li><i class="fa fa-caret-right"></i><a href="http://www.wasaga.com/index.php?view=details&id=1432%3Ajazz-in-the-park&option=com_eventlist&Itemid=332"> Jazz in the Park</a></li>
+														<li><i class="fa fa-caret-right"></i><a href="http://electricelements.ca/"> Electric Elements Festival</a></li>
+														<li><i class="fa fa-caret-right"></i><a href="http://wasagabeachrally.com/index.php?action=display&cat=19"> Wasaga Beach Motorcycle Rally</a></li>
+														<li><i class="fa fa-caret-right"></i><a href="http://ugseries.com/beach-wod/"> Rebok Underground Series-BeachWOD</a></li>
+														<li><i class="fa fa-caret-right"></i> <a href="http://www.multisportcanada.com/"> Multi-Sport Triathalon</a></li>
+													</ul>
 														
 													</div>
 													<div class="col-md-6">
@@ -483,7 +489,7 @@
 				<div class="row">
 					<div class="col-md-6">
 								<div class="image-box">
-										<img src="images/proposal1.png" alt="">	
+										<img id="proposal-model" src="images/proposal1.png" alt="">	
 								</div>				
 					</div>
 					<div class="col-md-6 proposal">
@@ -526,7 +532,7 @@
 									<li><i class="fa fa-envelope-o pr-10"></i> <a href="mailto:cstuart@marketvisionrealty.com" data-rel="external">cstuart@marketvisionrealty.com</a></li>
 								</ul>
 								<ul class="social-links">
-									<li class="linkedin"><a target="_blank" href="http://www.linkedin.com"><i class="fa fa-linkedin"></i></a></li>
+									<li class="linkedin"><a target="_blank" href="https://ca.linkedin.com/pub/charles-stuart/15/396/976"><i class="fa fa-linkedin"></i></a></li>
 								</ul>
 							</div>
 						</div>
@@ -541,6 +547,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
+							<p class="small text-center">Last updated June 20 2015</p>
 						</div>
 					</div>
 				</div>
@@ -574,13 +581,9 @@
 		<!-- Custom Scripts -->
 		<script type="text/javascript" src="js/jquery.fancybox.js"></script>
 		<script type="text/javascript" src="js/jquery.fancybox-buttons.js"></script>
-
-		<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.5.0/slick.min.js"></script>
 		
-		<script type="text/javascript" src="js/photoswipe.min.js"></script>
-		<script type="text/javascript" src="js/photoswipe-ui-default.min.js"></script>
 
-				<script type="text/javascript" src="js/custom.js"></script>
+		<script type="text/javascript" src="js/custom.js"></script>
 
 		
 
